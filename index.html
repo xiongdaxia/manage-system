@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .ih-item {
+      position: relative;
+      width: 220px;
+      height: 220px;
+    }
+
+    .ih-item .img img {
+      position: relative;
+      width: 220px;
+      height: 220px;
+      max-width: 100%;
+      transition: 0.35s;
+    }
+
+    .ih-item .info {
+      position: absolute;
+      top: 220px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: all 0.35s ease-in-out;
+    }
+
+    .ih-item a:hover .info {
+      transform: translateY(-220px);
+      opacity: 1;
+      background: rgba(255, 255, 255, 1)
+    }
+
+    .ih-item a:hover .img img {
+      opacity: 0.1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ih-item">
+    <a href="#">
+      <div class="img"><img src="http://pdi70qfib.bkt.clouddn.com/k2.jpg" alt="img"></div>
+      <div class="info">
+        <h3>介绍一下</h3>
+      </div>
+    </a>
+      </div>
+</body>
+
+</html>
